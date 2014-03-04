@@ -1,0 +1,63 @@
+body {
+    background: url(colin_bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-size: 22px;
+    font-family: courier;
+    color: yellow;
+}
+header {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.7);
+}
+header li {
+    display: inline;
+    margin: 0 10px;
+}
+ul {
+    background-color: rgba(0, 0, 0, 0.25);
+    max-width = 600px;
+    padding: 10px 10px 5px 10px;
+}
+h1, h2 {
+    color: black;
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 55px;
+}
+a[id="facebook"] {
+    color: white;
+    background-color: #3B5998;
+}
+div[id="content"] {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+p, li {
+    font-size: 22px;
+}
+p {
+    text-align: justify;
+    padding: 10px;
+}
+li {
+    text-align: left;
+    margin: 10px;
+}
+input {
+    border: 0;
+    padding: 10px;
+    font-family: courier;
+    font-size: 20px;
+}
+input[type="submit"] {
+    background: yellow;
+}
