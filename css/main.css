@@ -1,5 +1,5 @@
 body {
-    background: url(colin_bg.jpg);
+    background: url("../media/colin_bg.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
