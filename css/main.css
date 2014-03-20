@@ -238,7 +238,7 @@ HEADER--media queries
 
 @media (min-width: 768px) {
   #heading-text {
-    margin-top: 20px;
+    margin-top: 18px;
     padding-top: 5px; 
     text-align: right;
   }
@@ -276,6 +276,7 @@ HEADER--media queries
   #heading-text {
     margin-top: 0;
     margin-bottom: 0;
+    padding-right: 15px;
   }
   
   #heading-text h1 {
@@ -287,9 +288,14 @@ HEADER--media queries
     font-size: 1.45em;
   }
   
+  #heading-text h2 {
+    font-size: 1.45em
+  }
+  
   #me-main {
+    margin-top: -10px;
     margin-left: auto;
-    width: 75%;
+    width: 86%;
   }
   
   #contact-methods {
@@ -320,6 +326,10 @@ HEADER--media queries
 }
 
 @media (min-width: 1200px) {
+  #heading-text {
+    padding-right: 7px;
+  }
+  
   #heading-text h1 {
     font-size: 6.3em;
     line-height: 1em
@@ -330,7 +340,8 @@ HEADER--media queries
   }
   
   #heading-text h2 {
-    font-size: 1.85em;
+    text-align: center;
+    font-size: 1.8em;
     line-height: 1.33em;
   }
   
