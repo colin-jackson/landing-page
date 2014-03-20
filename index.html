@@ -1,38 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Colin Jackson</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<title>Colin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,400,700,100italic,400italic" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+		<link rel="stylesheet" href="css/main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascript/jquery.zrssfeed.min.js"></script>
 	</head>
   
 	<body>
-		<header>
-			<h1>Colin Jackson</h1>
-			<ul>
-				<li><a href="https://www.facebook.com/colin.s.jackson"><img src="media/facebook_logo.png" /></a></li>
-				<li><a href="http://twitter.com/csjfromnyc"><img src="media/twitter_logo_white.png" /></a></li>
-				<li><a href="http://www.linkedin.com/in/colinsjackson"><img src="media/linkedin_logo.png" /></a></li>
-				<li><a href="http://studentific.com"><img src="media/GSL_logo.png" /></a></li>
-				<li><a href="mailto:colin.s.jackson90@gmail.com?subject=From%20your%20website"><img src="media/email-icon-hi.png" /></a></li>
-			</ul>
-		</header>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-0">
+            <div id="heading-text">
+              <h1 id="heading-name"><span id="first-name">colin</span><br> jackson<br></h1>
+              <h2 id="heading-subtitle">Hardcore Novice Developer</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img id="me-main" src="media/colin_square.jpeg" class="img-responsive img-circle" alt="an artsy-fartsy black-and-white whoto of myself in a cold place">
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div id="contact-methods" class="row">
+              <ul class="list-unstyled list-inline">
+                <li class="col-xs-4 col-sm-2 col-md-6"><a href="https://www.facebook.com/colin.s.jackson" target="_blank"><img src="media/icons/facebook-sea.png" alt="facebook"></a></li>
+                <li class="col-xs-4 col-sm-2 col-md-6"><a href="http://twitter.com/choccoli" target="_blank"><img src="media/icons/twitter-sea.png" alt="twitter"></a></li>
+                <li class="col-xs-4 col-sm-2 col-md-6"><a href="https://github.com/colinjackson" target="_blank"><img src="media/icons/github-sea.png" alt="github"></a></li>
+                <li class="col-xs-4 col-sm-2 col-md-6"><a href="http://www.linkedin.com/in/colinsjackson" target="_blank"><img src="media/icons/linkedin-sea.png" alt="linkedin"></a></li>
+                <li class="col-xs-4 col-sm-2 col-md-6"><a href="mailto:colin.s.jackson90@gmail.com?subject=From%20your%20website"><img src="media/icons/atsign-sea.png" alt="email"></a></li>
+                <li class="col-xs-4 col-sm-2 col-md-6"><a href="http://www.studentific.com"><img class="img-circle" src="media/icons/graphpaper-sea.png" alt="blog"></a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      </header>
+      <div id="content">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-0">
+            <div id="biography">
+              <p><span id="enthusiastic-hello">Hi!</span> My name is <strong>Colin</strong>. I'm a <em>native New Yorker</em> who's a long way from home, in the final stretch of my <em>Economics Bachelor's degree with a focus on quantitative methods</em> from the University of Oxford in the UK.</p>
+              <p><em>Programming</em> has been an on-and-off hobby of mine for five years, but last summer I discovered Apple's <strong>Objective-C</strong> for iOS and OS X development and, inexplicably, fell in love with it and—more explicably—programming in general. For just under a year now, I've been exploring Objective-C (mostly via <a href="http://teamtreehouse.com/colinjackson">Treehouse</a>), fits and starts of Python (with <a href="http://omz-software.com/pythonista/">Pythonista</a>), and most recently the <em>front-end webdev HTML, CSS, Javascript trio</em>: hence, this website.</p>
+              <p>I graduate from Oxford in July of this year, and once that's done, <strong>I'll continue learning.</strong></p>
+            </div>
+          </div>
+          <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
+            <div id="blog-rss">
+              <h2><a href="http://www.studentific.com">Studentific</a></h2>
+              <h3>Personal Blog RSS Feed</h3>
+              <div id="rss-plugin">
+                <script>
+                  $(document).ready(function () {
+                    $("#rss-plugin").rssfeed("http://www.studentific.com/rss", {
+                      limit: 3,
+                      date: false,
+                      titletag: "h3",
+                      header: false
+                    });
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="footnote-link-top" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-0">
+            <p><i>If you're trying to reach me, any of the <a href="#contact-methods">social media or email</a> methods at the top of this page will work fine. I'm always watching them.</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+    $(window).load(function(){
+      $("#blog-rss ul").addClass("list-unstyled");
+    });
     
-		<div id="content">
-			<p>Thanks for visiting my landing page: it's very much a work in progress! You can reach me at the social media icons above.</p>
-			<p><a id="facebook" href="https://www.facebook.com/colin.s.jackson" target="_blank">Facebook</a> is the quickest way to get to me, but any of these will work.</p>
-			<p>-csj</p>
-		</div>
+    $("#footnote-link-top a").click(function() {
+      document.location.hash = "contact-methods";
+      window.scrollTo(0, 0);
+      event.preventDefault();
+      $("#contact-methods").on("webkitAnimationEnd msAnimationEnd animationend", function() {
+        document.location.hash = "";
+      });
+    });
+  </script>
 	</body>
-	
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-48890956-1', 'colinjackson.net');
-		ga('send', 'pageview');
-	</script>
-	
 </html>

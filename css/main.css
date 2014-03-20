@@ -1,63 +1,508 @@
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+GENERAL RULES
+GENERAL RULES
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */ 
+
 body {
-    background: url("../media/colin_bg.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-    font-size: 22px;
-    font-family: courier;
-    color: yellow;
+  background: #160020;
+  color: #e8ffff;
+  font-family: 'Josefin Slab', serif;
 }
-header {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 0, 0.7);
-}
-header li {
-    display: inline;
-    margin: 0 10px;
-}
-ul {
-    background-color: rgba(0, 0, 0, 0.25);
-    max-width = 600px;
-    padding: 10px 10px 5px 10px;
-}
-h1, h2 {
-    color: black;
-    padding-top: 15px;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-h1 {
-    font-size: 55px;
-}
-a[id="facebook"] {
-    color: white;
-    background-color: #3B5998;
-}
-div[id="content"] {
-    max-width: 600px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-p, li {
-    font-size: 22px;
-}
+
 p {
-    text-align: justify;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+a {
+  color: #998128;
+  font-weight: normal;
+}
+
+a:hover {
+  color: #fff;
+}
+
+em,
+strong {
+  color: #bff;
+}
+
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+HEADER
+HEADER
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */ 
+
+header {
+  margin-top: 1.25em;
+  margin-bottom: 2em;
+}
+
+#heading-text {
+  background: #36303f;
+  border-radius: 8px;
+  color: #d0eeee;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  margin-bottom: 20px;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#heading-text h1 {
+  font-size: 4.75em;
+  font-weight: bold;
+  line-height: .9em;
+  margin-top: 5px;
+}
+
+#first-name {
+  font-size: 1.1em;
+}
+
+#heading-text h2 {
+  color: #799;
+  font-size: 1.75em;
+  font-weight: 100;
+}
+
+#me-main {
+  border: 3px solid #7f6b28;
+  margin: 10px auto;
+  max-width: 300px;
+  width: 63%;
+}
+
+#contact-methods {
+  margin: 0 auto;
+  max-width: 425px;
+  text-align: center;
+  width: 85%;
+}
+
+#contact-methods img {
+  margin: 15px 0px;
+  max-width: 55%;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+HEADER--animations
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#contact-methods:target {
+  -webkit-animation: social-media-bg .8s;
+  -moz-animation: social-media-bg .8s;
+  animation: social-media-bg .8s;
+}
+
+@-webkit-keyframes social-media-bg
+{
+  20% {background: #b25;}
+  40% {background: #b25;}
+}
+@-moz-keyframes social-media-bg
+{
+  20% {background: #b25;}
+  40% {background: #b25;}
+}
+@keyframes social-media-bg
+{
+  20% {background: #b25;}
+  40% {background: #b25;}
+}
+
+#contact-methods:target li:nth-child(-n+3) {
+  -webkit-animation: social-media-bottom .8s;
+  -moz-animation: social-media-bottom .8s;
+  animation: social-media-bottom .8s;
+}
+
+#contact-methods:target li:nth-child(n+4) {
+  -webkit-animation: social-media-top .8s;
+  -moz-animation: social-media-top .8s;
+  animation: social-media-top .8s;
+}
+
+@-webkit-keyframes social-media-right
+{
+  0% {left: 0;}
+  20% {left: 50%;}
+  40% {left: 50%;}
+  100% {left: 0;}
+}
+@-webkit-keyframes social-media-left
+{
+  0% {left: 0;}
+  20% {left: -50%;}
+  40% {left: -50%;}
+  100% {left: 0;}
+}
+@-webkit-keyframes social-media-top
+{
+  0% {top: 0;}
+  20% {top: -90px;}
+  40% {top: -90px;}
+  100% {top: 0;}
+}
+@-webkit-keyframes social-media-bottom
+{
+  0% {top: 0;}
+  20% {top: 90px;}
+  40% {top: 90px;}
+  100% {top: 0;}
+}
+@-moz-keyframes social-media-left
+{
+  0% {left: 0;}
+  20% {left: 50%;}
+  40% {left: 50%;}
+  100% {left: 0;}
+}
+@-moz-keyframes social-media-right
+{
+  0% {left: 0;}
+  20% {left: -50%;}
+  40% {left: -50%;}
+  100% {left: 0;}
+}
+@-moz-keyframes social-media-top
+{
+  0% {top: 0;}
+  20% {top: -90px;}
+  40% {top: -90px;}
+  100% {top: 0;}
+}
+@-moz-keyframes social-media-bottom
+{
+  0% {top: 0;}
+  20% {top: 90px;}
+  40% {top: 90px;}
+  100% {top: 0;}
+}
+@keyframes social-media-left
+{
+  0% {left: 0;}
+  20% {left: 50%;}
+  40% {left: 50%;}
+  100% {left: 0;}
+}
+@keyframes social-media-right
+{
+  0% {left: 0;}
+  20% {left: -50%;}
+  40% {left: -50%;}
+  100% {left: 0;}
+}
+@keyframes social-media-top
+{
+  0% {top: 0;}
+  20% {top: -90px;}
+  40% {top: -90px;}
+  100% {top: 0;}
+}
+@keyframes social-media-bottom
+{
+  0% {top: 0;}
+  20% {top: 90px;}
+  40% {top: 90px;}
+  100% {top: 0;}
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+HEADER--media queries
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media (min-width: 768px) {
+  #heading-text {
+    margin-top: 20px;
+    padding-top: 5px; 
+    text-align: right;
+  }
+  
+  #heading-text h1 {
+    font-size: 4.5em;
+    line-height: 1.05em;
+  }
+  
+  #heading-text h2 {
+    font-size: 1.4em;
+    line-height: .95em;
+  }
+  
+  #contact-methods {
+    max-width: 768px;
+    width: 90%;
+  }
+    
+  /* HEADER--media query >=768px--animations */
+  #contact-methods:target li:nth-child(-n+3) {
+    -webkit-animation: social-media-right .8s;
+    -moz-animation: social-media-right .8s;
+    animation: social-media-right .8s;
+  }
+
+  #contact-methods:target li:nth-child(n+4) {
+    -webkit-animation: social-media-left .8s;
+    -moz-animation: social-media-left .8s;
+    animation: social-media-left .8s;
+  }
+}
+
+@media (min-width: 992px) {  
+  #heading-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  #heading-text h1 {
+    font-size: 4.85em;
+    line-height: 1.13em;
+  }
+  
+  #first-name {
+    font-size: 1.45em;
+  }
+  
+  #me-main {
+    margin-left: auto;
+    width: 75%;
+  }
+  
+  #contact-methods {
+    background: #36303f;
+    border-radius: 8px;
+    max-width: 100%;
     padding: 10px;
+    width: 100%;
+  }
+  
+  #contact-methods img {
+    margin: 6px 0;
+    width: 45%;
+  }
+  
+  /* HEADER--media query >=992px--animations */
+  #contact-methods:target li:nth-child(2n+1) {  
+    -webkit-animation: social-media-right .8s;
+    -moz-animation: social-media-right .8s;
+    animation: social-media-right .8s;
+  }
+  
+  #contact-methods:target li:nth-child(2n) {  
+    -webkit-animation: social-media-left .8s;
+    -moz-animation: social-media-left .8s;
+    animation: social-media-left .8s;
+  }  
 }
-li {
-    text-align: left;
-    margin: 10px;
+
+@media (min-width: 1200px) {
+  #heading-text h1 {
+    font-size: 6.3em;
+    line-height: 1em
+  }
+  
+  #first-name {
+    font-size: 1.5em;
+  }
+  
+  #heading-text h2 {
+    font-size: 1.85em;
+    line-height: 1.33em;
+  }
+  
+  #contact-methods img {
+    max-width: 46%;
+  }
 }
-input {
-    border: 0;
-    padding: 10px;
-    font-family: courier;
-    font-size: 20px;
+
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+BODY
+BODY
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#content {
+  font-size: 1.5em;
+  margin-top: 45px;
 }
-input[type="submit"] {
-    background: yellow;
+
+#biography {
+  border-top: dotted #8c8067 1px;
+  border-bottom: dotted #8c8067 1px;
+  line-height: 1.75em;
+  margin-bottom: 50px;
+  padding: 50px 0;
 }
+
+#enthusiastic-hello {
+  color: #b25;
+  float: left;
+  font-size: 110px;
+  font-weight: bold;
+  line-height: 1em;
+  margin-bottom: -30px;
+  padding-top: 6px;
+  padding-right: 10px;
+}
+
+#biography p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+BODY--blog rss feed
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#blog-rss {
+  background: #36303f;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+#blog-rss h2, h3 {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 2.25em;
+  text-align: center;
+}
+
+#blog-rss h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+#blog-rss p {
+  margin-bottom: 10px;
+}
+
+#blog-rss li,
+#blog-rss h2 {
+  background: #46404f;
+  border-radius: 3px;
+  margin: 8px 5px;
+  padding: 5px 10px;
+}
+
+#blog-rss h2 {
+  margin: 5px;
+}
+
+#blog-rss li:last-child {
+  margin-bottom: 5px;
+}
+
+#blog-rss ul {
+  margin-bottom: 0;
+}
+
+#blog-rss h2 a {
+  color: #b0dddd;
+}
+
+#blog-rss h2 + h3 {
+  color: #777;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+BODY--footnote (triggers animation)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#footnote-link-top p {
+  border-top: dotted #8c8067 1px;
+  color: #608989;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin-top: 50px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+#footnote-link-top a {
+  color: white;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+BODY--media queries
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media (min-width: 992px) {  
+  #content {
+    font-weight: 100;
+  }
+  
+  #biography {
+    margin: 0;
+    padding: 50px 0;
+  }
+  
+  #biography p {
+    padding: 0 50px;
+  }
+  
+  #footnote-link-top p {
+    border: none;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+END
+END
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */ 
