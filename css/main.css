@@ -46,6 +46,10 @@ HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */ 
 
+.box {
+  
+}
+
 header {
   margin-top: 1.25em;
   margin-bottom: 2em;
@@ -122,16 +126,10 @@ HEADER--animations
 
 #contact-methods:target {
   -webkit-animation: social-media-bg .8s;
-  -moz-animation: social-media-bg .8s;
   animation: social-media-bg .8s;
 }
 
 @-webkit-keyframes social-media-bg
-{
-  20% {background: #b25;}
-  40% {background: #b25;}
-}
-@-moz-keyframes social-media-bg
 {
   20% {background: #b25;}
   40% {background: #b25;}
@@ -144,13 +142,11 @@ HEADER--animations
 
 #contact-methods:target a:nth-child(-n+3) li {
   -webkit-animation: social-media-bottom .8s;
-  -moz-animation: social-media-bottom .8s;
   animation: social-media-bottom .8s;
 }
 
 #contact-methods:target a:nth-child(n+4) li {
   -webkit-animation: social-media-top .8s;
-  -moz-animation: social-media-top .8s;
   animation: social-media-top .8s;
 }
 
@@ -176,34 +172,6 @@ HEADER--animations
   100% {top: 0;}
 }
 @-webkit-keyframes social-media-bottom
-{
-  0% {top: 0;}
-  20% {top: 90px;}
-  40% {top: 90px;}
-  100% {top: 0;}
-}
-@-moz-keyframes social-media-left
-{
-  0% {left: 0;}
-  20% {left: 50%;}
-  40% {left: 50%;}
-  100% {left: 0;}
-}
-@-moz-keyframes social-media-right
-{
-  0% {left: 0;}
-  20% {left: -50%;}
-  40% {left: -50%;}
-  100% {left: 0;}
-}
-@-moz-keyframes social-media-top
-{
-  0% {top: 0;}
-  20% {top: -90px;}
-  40% {top: -90px;}
-  100% {top: 0;}
-}
-@-moz-keyframes social-media-bottom
 {
   0% {top: 0;}
   20% {top: 90px;}
@@ -274,13 +242,11 @@ HEADER--media queries
   /* HEADER--media query >=768px--animations */
   #contact-methods:target a:nth-child(-n+3) li {
     -webkit-animation: social-media-right .8s;
-    -moz-animation: social-media-right .8s;
     animation: social-media-right .8s;
   }
 
   #contact-methods:target a:nth-child(n+4) li {
     -webkit-animation: social-media-left .8s;
-    -moz-animation: social-media-left .8s;
     animation: social-media-left .8s;
   }
 }
@@ -335,13 +301,11 @@ HEADER--media queries
   /* HEADER--media query >=992px--animations */
   #contact-methods:target a:nth-child(2n+1) li {  
     -webkit-animation: social-media-right .8s;
-    -moz-animation: social-media-right .8s;
     animation: social-media-right .8s;
   }
   
   #contact-methods:target a:nth-child(2n) li {  
     -webkit-animation: social-media-left .8s;
-    -moz-animation: social-media-left .8s;
     animation: social-media-left .8s;
   }  
 }
