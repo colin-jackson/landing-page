@@ -140,12 +140,7 @@ HEADER--animations
   40% {background: #b25;}
 }
 
-#contact-methods:target a:nth-child(-n+3) li {
-  -webkit-animation: social-media-bottom .8s;
-  animation: social-media-bottom .8s;
-}
-
-#contact-methods:target a:nth-child(n+4) li {
+#contact-methods:target a li {
   -webkit-animation: social-media-top .8s;
   animation: social-media-top .8s;
 }
@@ -167,15 +162,8 @@ HEADER--animations
 @-webkit-keyframes social-media-top
 {
   0% {top: 0;}
-  20% {top: -90px;}
-  40% {top: -90px;}
-  100% {top: 0;}
-}
-@-webkit-keyframes social-media-bottom
-{
-  0% {top: 0;}
-  20% {top: 90px;}
-  40% {top: 90px;}
+  20% {top: -250px;}
+  40% {top: -250px;}
   100% {top: 0;}
 }
 @keyframes social-media-left
@@ -195,17 +183,11 @@ HEADER--animations
 @keyframes social-media-top
 {
   0% {top: 0;}
-  20% {top: -90px;}
-  40% {top: -90px;}
+  20% {top: -250px;}
+  40% {top: -250px;}
   100% {top: 0;}
 }
-@keyframes social-media-bottom
-{
-  0% {top: 0;}
-  20% {top: 90px;}
-  40% {top: 90px;}
-  100% {top: 0;}
-}
+
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
