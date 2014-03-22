@@ -1,0 +1,16 @@
+{
+  "name": "colinjackson.github.io",
+  "version": "0.0.0",
+  "description": "personal website",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/colinjackson/colinjackson.github.io.git"
+  },
+  "author": "Colin Jackson",
+  "license": "MIT",
+  "homepage": "http://www.colinjackson.co",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
