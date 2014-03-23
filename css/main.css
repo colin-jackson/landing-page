@@ -24,7 +24,8 @@ a {
   font-weight: normal;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #fff;
 }
 
@@ -98,7 +99,7 @@ header {
   border-radius: 3px;
 }
 
-#contact-methods li:focus,
+#contact-methods a:focus li,
 #contact-methods li:hover {
   background: #b25;
 }
