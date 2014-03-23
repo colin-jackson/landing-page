@@ -98,6 +98,7 @@ header {
   border-radius: 3px;
 }
 
+#contact-methods li:focus,
 #contact-methods li:hover {
   background: #b25;
 }
