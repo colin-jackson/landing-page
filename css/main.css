@@ -231,7 +231,11 @@ HEADER--media queries
   }
 }
 
-@media (min-width: 992px) {  
+@media (min-width: 992px) {
+  .container {
+    padding-top: 33px;
+  }
+
   #heading-text {
     margin-top: 0;
     margin-bottom: 0;
@@ -370,6 +374,7 @@ BODY--blog rss feed
   border-radius: 8px;
   font-size: 16px;
   padding: 5px;
+
 }
 
 #blog-rss h2, h3 {
@@ -412,7 +417,7 @@ BODY--blog rss feed
 }
 
 #blog-rss h2 + h3 {
-  color: #777;
+  color: #799;
 }
 
 
@@ -467,6 +472,10 @@ BODY--media queries
   #footnote-link-top p {
     border: none;
     margin-top: 0;
+  }
+
+  #blog-rss {
+    margin-top: 50px;
   }
 }
 
